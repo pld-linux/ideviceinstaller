@@ -5,7 +5,7 @@ Release:	0.1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	%{name}.tar.bz2
-# Source0-md5:	21a2b982075b3dc6afc0b32c706950ce
+# Source0-md5:	1fafde989d8178f137fb208766e02f9a
 URL:		http://www.libimobiledevice.org/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
