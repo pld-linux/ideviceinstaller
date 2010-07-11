@@ -10,8 +10,9 @@ URL:		http://www.libimobiledevice.org/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	libimobiledevice-devel >= 0.9.7
+BuildRequires:	libplist-devel >= 0.15
 BuildRequires:	libtool
-BuildRequires:	libzip-devel
+BuildRequires:	libzip-devel >= 0.8
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
