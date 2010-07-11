@@ -9,7 +9,10 @@ Source0:	%{name}.tar.bz2
 URL:		http://www.libimobiledevice.org/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
+BuildRequires:	libimobiledevice-devel >= 0.9.7
 BuildRequires:	libtool
+BuildRequires:	libzip-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
