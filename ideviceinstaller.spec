@@ -27,8 +27,8 @@ archive, restore, and enumerate installed or archived apps.
 %{__sed} -i -e 's/-Werror//' configure.ac
 
 %build
-%{__aclocal} -I m4
 %{__libtoolize}
+%{__aclocal} -I m4
 %{__autoheader}
 %{__automake}
 %{__autoconf}
