@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Zarządzanie aplikacjami na urządzeniach iPhone oraz iPod To
 Name:		ideviceinstaller
 Version:	1.1.1
 Release:	1
-License:	GPL v2
+License:	GPL v2+
 Group:		Applications
 #Source0Download: https://libimobiledevice.org/
 Source0:	https://github.com/libimobiledevice/ideviceinstaller/releases/download/%{version}/%{name}-%{version}.tar.bz2
@@ -38,9 +38,9 @@ zarchiwizowane aplikacje.
 %build
 %{__libtoolize}
 %{__aclocal} -I m4
+%{__autoconf}
 %{__autoheader}
 %{__automake}
-%{__autoconf}
 %configure \
 	--disable-silent-rules
 %{__make}
@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README.md
+%doc AUTHORS NEWS README.md
 %attr(755,root,root) %{_bindir}/ideviceinstaller
 %{_mandir}/man1/ideviceinstaller.1*
