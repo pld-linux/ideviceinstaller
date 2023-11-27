@@ -2,12 +2,13 @@ Summary:	Manage Applications of an iPhone or iPod Touch
 Summary(pl.UTF-8):	Zarządzanie aplikacjami na urządzeniach iPhone oraz iPod Touch
 Name:		ideviceinstaller
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications
 #Source0Download: https://libimobiledevice.org/
 Source0:	https://github.com/libimobiledevice/ideviceinstaller/releases/download/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	824b1c6bcb2fab6a0788945c019f83be
+Patch0:		%{name}-libzip.patch
 URL:		https://libimobiledevice.org/
 BuildRequires:	autoconf >= 2.64
 BuildRequires:	automake
@@ -34,6 +35,7 @@ zarchiwizowane aplikacje.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
