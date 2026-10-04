@@ -2,7 +2,7 @@ Summary:	Manage Applications of an iPhone or iPod Touch
 Summary(pl.UTF-8):	Zarządzanie aplikacjami na urządzeniach iPhone oraz iPod Touch
 Name:		ideviceinstaller
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications
 #Source0Download: https://libimobiledevice.org/
